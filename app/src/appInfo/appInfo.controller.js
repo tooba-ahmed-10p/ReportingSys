@@ -13,24 +13,12 @@
 		.controller('AppInfo', AppInfo);
 
   /* @ngInject */
-	function AppInfo(){
+	function AppInfo(storage,service){
 		var vm = this;
-
-		vm.testFunction = testFunction;
-
-    /////////////////////
-
-    /**
-     * @ngdoc method
-     * @name testFunction
-     * @param {number} num number is the number of the number
-     * @methodOf app.appInfo.controller:AppInfo
-     * @description
-     * My Description rules
-     */
-    function testFunction(num){
-			console.info('This is a test function');
-		}
+    var params = {apiKey:storage.appConstants.applications[0].apiKey};
+    vm.dataLoading = service.httpCall(service.AppInfo.get(params)).success(function(data){
+      vm.appInfo= data.application;
+    });
 	}
 
 }());

@@ -4,7 +4,7 @@ module.exports = {
   options: {
     port: 7030,
     // Change this to '0.0.0.0' to access the server from outside.
-    hostname: 'localhost',
+    hostname: '172.16.0.169',
     livereload: 35729
   },
   proxies: [

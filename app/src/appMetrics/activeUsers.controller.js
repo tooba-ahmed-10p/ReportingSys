@@ -17,9 +17,6 @@
     var vm = this;
     var pageUrls = [];
     vm.reportData = [];
-    vm.dailyData = [];
-    vm.weeklyData = [];
-    vm.monthlyData = [];
     /////////////////////
     vm.initializeChartDaily = initializeChartDaily;
     vm.initializeChartByWeek = initializeChartByWeek;
@@ -46,7 +43,7 @@
             return response;
           });
       });
-      $q.all(promises).then(function(data){
+      vm.dataLoading= $q.all(promises).then(function(data){
         vm.reportData= data;
         vm.reportDataGroupedBy = _.groupBy(vm.reportData,'@metric');
         initializeChartDaily();
@@ -55,7 +52,7 @@
       });
     }
 
-    function _getSeries(data, startMonth, endMonth) {
+    function _getSeries(data, startMonth, endMonth, pointInterval) {
       return _.map(data, function (data) {
         return {
           name: data.application,
@@ -63,7 +60,7 @@
             return parseInt(value['@value']);
           }),
           pointStart: Date.UTC(2016, startMonth, 1),
-          pointInterval: 24 * 3600 * 1000,
+          pointInterval: 24 * 3600 * pointInterval,
           pointEnd: Date.UTC(2016, endMonth, 1)
 
         };
@@ -106,7 +103,7 @@
           verticalAlign: 'middle',
           borderWidth: 0
         },
-        series: _getSeries(vm.reportDataGroupedBy.ActiveUsersByDay, 6, 9)
+        series: _getSeries(vm.reportDataGroupedBy.ActiveUsersByDay, 6, 9,1000)
 
       });
     }
@@ -146,7 +143,7 @@
           verticalAlign: 'middle',
           borderWidth: 0
         },
-        series: _getSeries(vm.reportDataGroupedBy.ActiveUsersByWeek, 7, 9)
+        series: _getSeries(vm.reportDataGroupedBy.ActiveUsersByWeek, 7, 9,7000)
 
       });
     }
@@ -186,7 +183,7 @@
           verticalAlign: 'middle',
           borderWidth: 0
         },
-        series: _getSeries(vm.reportDataGroupedBy.ActiveUsersByMonth, 4, 9)
+        series: _getSeries(vm.reportDataGroupedBy.ActiveUsersByMonth, 4, 9, 30000)
 
       });
     }

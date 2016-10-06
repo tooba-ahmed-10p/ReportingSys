@@ -12,7 +12,8 @@
     'ui.router',
     'ui.bootstrap',
     'restangular',
-    'ui.select'
+    'ui.select',
+    'cgBusy'
   ]);
 
 }());

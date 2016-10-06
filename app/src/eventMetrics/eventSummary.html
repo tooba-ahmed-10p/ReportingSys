@@ -7,24 +7,24 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="d_board bdrt-orange panel-default panel table-responsive">
-      <div class="wrapper wrapper-content counting">
+      <div class="wrapper wrapper-content counting" cg-busy="vm.dataLoading">
         <table class="table table-striped">
           <thead>
           <tr>
             <th>Event Name</th>
             <th>App Name</th>
             <th>Total Occurrences</th>
-            <th>Avg Daily Occurrences</th>
-            <th>Events Per Session</th>
+            <th>Unique Event Users Daily Avg</th>
+            <th>Session Count of Event Occurrence</th>
           </tr>
           </thead>
           <tbody>
           <tr ng-repeat="event in vm.eventSummary">
-            <td>{{event.SkillName}}</td>
-            <td>{{event.MidLevelEmployeeCount}}</td>
-            <td>{{event.SeniorLevelEmployeeCount}}</td>
-            <td>{{event.TotalBench}}</td>
-            <td></td>
+            <td>{{event['@eventName']}}</td>
+            <td>{{event['application']}}</td>
+            <td>{{event['@totalCount']}}</td>
+            <td>{{event['@avgUsersLastDay']}}</td>
+            <td>{{event['@totalSessions']}}</td>
           </tr>
           </tbody>
         </table>
