@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/bower_components/angular-ui-router/release/angular-ui-router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/app.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/appInfo/appInfo.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/appMetrics/activeUsers.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/appMetrics/activeUsers.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/appMetrics/appMetrics.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/common/ngMetis.directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/common/service.factory.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/common/storage.factory.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/core/core.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/core/router.config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/dashboard/dashboard.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/dashboard/dashboard.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/eventMetrics/eventMetrics.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/eventMetrics/eventSummary.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/shell/header.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/shell/header.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/shell/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/shell/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/shell/mainMenu.constant.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/shell/shell.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/css/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/partials/_portal_custom.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/partials/_style.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/styles/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/styles/partials/_portal_custom.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tasks/copy.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tasks/html2js.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tasks/replace.js" charset="UTF-8" />
+  </component>
+</project>

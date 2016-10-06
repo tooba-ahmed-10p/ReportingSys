@@ -1,0 +1,35 @@
+/*
+=====================
+Document View Screen
+=====================
+*/
+
+.internalWrapper.documentsView {
+  .addDocumentBtn {
+    float: right;
+    margin-top: 20px;
+    margin-right: 13px;
+  }
+  md-list-item {
+    padding: 0;
+    p {
+      font-size: medium;
+    }
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+
+.uploadDocumentView {
+  table {
+    thead {
+      tr {
+        text-align-last: center;
+      }
+    }
+    .height30 {
+      height: 30px;
+    }
+  }
+}

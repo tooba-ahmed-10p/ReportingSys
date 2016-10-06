@@ -1,0 +1,82 @@
+.poll-footer {
+  position: fixed;
+  bottom: 15px;
+}
+
+.poll-buttons {
+  float: left;
+  padding-right: 60px;
+}
+
+.option-fields {
+  padding: 0 0 15px 0;
+}
+
+.pull-right {
+  float: right;
+}
+
+.carousel-control-left {
+  margin-right: 54px;
+}
+
+.carousel-control-right {
+  margin-right: 26px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 8% !important;
+  font-size: 20px;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+
+  .fa {
+    color: black;
+  }
+}
+
+.add-poll-remove-option {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 0 !important;
+  .fa-minus-circle {
+    color: red;
+  }
+}
+
+.poll-modal {
+  margin: 16px;
+  height: 210px;
+  padding: 0 15px 0 15px;
+}
+
+.poll-percentage {
+  margin: 15px;
+  .progress {
+    margin-bottom: 0;
+  }
+}
+
+.poll-active-checkbox {
+  display: block;
+  margin: 0 auto !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.panel-default {
+  .poll-body {
+    padding: 0 15px 0 15px !important;
+  }
+}

@@ -1,0 +1,29 @@
+/*
+============
+Login Screen
+============
+*/
+
+#login-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 30%;
+
+  .login-logo {
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  #forgot-password-link {
+    margin-right: 5px;
+  }
+
+  #login-button {
+    width: 30%;
+  }
+}

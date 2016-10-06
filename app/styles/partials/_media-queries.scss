@@ -1,0 +1,517 @@
+/*
+=================================
+Desktop styles go below this line
+=================================
+*/
+@media only screen and (min-width: 768px) {
+  .header-empSearch {
+    .empSearch-select{
+      .ui-select-match {
+        min-width: 180px;
+      }
+    }
+  }
+}
+
+/*
+================================
+Mobile styles go below this line
+================================
+*/
+@media only screen and (max-width: 768px) {
+
+  body.mini-navbar #page-wrapper {
+    padding: 0 0 0 50px;
+  }
+
+  .navbar.navbar-static-top {
+    .navbar-top-links > li > a {
+      padding: 6px;
+    }
+    #something.minimalize-styl-2 {
+      border-radius: 0;
+      height: 50px;
+      margin: 0;
+      padding: 13px 12px;
+      .fa.fa-bars {
+        font-size: 22px;
+      }
+    }
+    .header-usrImg {
+      margin: 0;
+      > .img-circle {
+        height: 36px;
+        width: 36px;
+      }
+    }
+    .header-empSearch {
+      margin: 4px 0;
+    }
+  }
+
+  .navbar-default.navbar-static-side {
+    width: 50px !important;
+    #side-menu {
+      li > a {
+        padding: 14px 15px;
+      }
+      .logo-element {
+        padding: 10px 0;
+        img {
+          width: 28px;
+        }
+      }
+      .nav-second-level {
+        left: 50px;
+      }
+    }
+  }
+
+  .internalWrapper {
+    padding: 0 10px;
+  }
+
+  .navbar-top-links li {
+    margin: 0 !important;
+    .dropdown-menu {
+      left: auto;
+      right: 10px;
+    }
+  }
+
+  .dashboard-header {
+    padding: 14px 10px;
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Login Screen Responsive - Start */
+  #login-panel {
+    top: 20%;
+    .login-logo {
+      width: 130px;
+    }
+    .panel-body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  /* Login Screen Responsive - End */
+
+  .feed-activity .activity-widget {
+    #activityTable tr td ul li {
+      font-size: 13px;
+    }
+    .actRefreshWrap {
+      right: -11px;
+      top: -63px;
+      .form-control {
+        width: 150px !important;
+      }
+    }
+  }
+
+  .wrapper-content {
+    padding: 10px 10px 20px;
+  }
+
+  //#page-wrapper {
+  //  padding: 0 15px;
+  //}
+  .navbar-right {
+    float: right;
+  }
+  .modal-lg {
+    width: 97%;
+  }
+  .benchEmp .bench-top-section {
+    min-height: auto;
+    height: auto;
+  }
+  .projAddResource{
+    float: left;
+    width: 100%;
+    a{
+      float: left !important;
+    }
+  }
+
+  .header-empSearch {
+    margin: 10px 0px;
+    width: 100%;
+    .empSearch-select{
+      .ui-select-match {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  }
+
+}
+
+/*
+===============
+Max Width 990px
+===============
+*/
+@media only screen and (max-width: 990px) {
+
+  .p-holder, .p-holder-e {
+    position: static !important;
+  }
+
+  .timesheet-progress {
+    top: 0;
+  }
+
+  .month-nav-bar {
+    select {
+      float: none;
+      margin: 10px;
+      width: calc(100% - 20px);
+    }
+  }
+
+  .month-nav-bar {
+    padding-right: 0;
+    .tabset {
+      display: block;
+      height: auto;
+      li {
+        width: 16.66%;
+        margin: 0;
+        a {
+          font-size: 12px;
+          margin: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .seating-wrapper{
+    .hall-buttons{
+      div{
+        margin-bottom: 10px;
+      }
+    }
+    .buttons-grp{
+      text-align: left;
+    }
+  }
+}
+
+
+/*
+================
+Max Width 1279px
+================
+*/
+@media only screen and (max-width: 1279px) {
+  .bannerAnniversary,.bannerBirthday{
+    background-position: 0 0;
+    h2 {
+      right: 0;
+      font-size: 30px;
+      left: 0;
+      position: absolute;
+      background: rgba(231, 234, 236, 0.73);
+      padding: 10px;
+    }
+    .dotI{
+      &:before{
+        display: none;
+      }
+    }
+  }
+
+  .rosterModal{
+    .funkyradio {
+      width: 100%;
+    }
+  }
+}
+
+/*
+=================================
+Landing styles go below this line
+=================================
+*/
+@media only screen and (max-width: 767px) {
+
+  .innerContentWrapper {
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+
+  .landingWrapper {
+    padding: 0 10px;
+  }
+  .gBoxWrap .gBox {
+    padding: 10px !important;
+  }
+  #landingHeader {
+    height: 50px;
+    .logoWrap {
+      width: 100px;
+    }
+    .navWrap ul li.dropLink {
+      height: 50px;
+      padding: 0 !important;
+      right: -10px;
+      ul {
+        background-image: none !important;
+        padding: 0 !important;
+        li.profileImg {
+          height: 38px;
+          margin: 7px 10px 0 !important;
+          width: 38px;
+          img {
+            height: 38px;
+            width: 38px;
+          }
+        }
+      }
+      .dropWrap {
+        top: 50px;
+      }
+    }
+  }
+  .subHeader {
+    min-height: 40px;
+    height: auto;
+    margin-top: 50px;
+    .quotesWrap {
+      border: 0;
+      border-top: 1px solid #d4d4d4;
+      height: auto;
+      max-width: none;
+      padding: 10px 0;
+      width: 100%;
+      .quoteMsg {
+        background-size: 12px auto;
+        font-size: 12px;
+        line-height: normal;
+        padding-left: 18px;
+        .endQuote {
+          background-size: 12px auto;
+          top: 8px;
+        }
+      }
+    }
+    h1 {
+      font-size: 16px;
+      margin: 10px 0 0;
+    }
+  }
+  .contentWrapper {
+    .eMonthWrap {
+      margin: 10px 0 0;
+      .sinChunksWrap {
+        margin-bottom: 10px !important;
+        .sinChunks {
+          .eDetail-header {
+            width: 100% !important;
+            .chumksCount {
+              font-size: 22px !important;
+            }
+          }
+          .carousel-inner {
+            top: 0 !important;
+            .eImg {
+              height: 55px !important;
+              margin: 0 10px 0 0 !important;
+              width: 55px !important;
+              img {
+                height: 55px !important;
+                width: 55px !important;
+              }
+            }
+            .eDetail {
+              bottom: auto !important;
+              margin: 0 !important;
+              width: calc(100% - 65px) !important;
+              .employeeTitle {
+                font-size: 14px !important;
+              }
+              .employeeDesignation {
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .singleDiscussion {
+      margin-bottom: 50px !important;
+      .deImg {
+        height: 46px !important;
+        width: 46px !important;
+        img {
+          height: 46px !important;
+          width: 46px !important;
+        }
+      }
+      .deDetailWrap {
+        margin: 0 0 0 10px !important;
+        width: calc(100% - 59px) !important;
+        .deTitle a span, .deMsg {
+          font-size: 12px !important;
+        }
+        .commentsWrap, .writeCommentWrap {
+          .deImg {
+            height: 28px !important;
+            width: 28px !important;
+            img {
+              height: 28px !important;
+              width: 28px !important;
+            }
+          }
+          .writeNewCmt {
+            width: calc(100% - 50px) !important;
+          }
+        }
+      }
+    }
+    .timeWrap {
+      .sinTime {
+        height: 65px !important;
+        padding-top: 8px !important;
+        .timeField {
+          font-size: 18px !important;
+          .flagWrap {
+            top: 4px !important;
+          }
+        }
+      }
+    }
+    .antWrap {
+      .gBox {
+        height: 160px;
+        .antContentLeft {
+          margin: 0 10px 0 0 !important;
+          width: 40px !important;
+          .aDateWrap {
+            opacity: 0;
+          }
+        }
+        .antContentRight {
+          width: calc(100% - 50px);
+          .antSingle {
+            .antSingleTime {
+              font-size: 10px;
+              position: static;
+            }
+            .antSingleTitle {
+              font-size: 14px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .antSingleContent {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    .lifeWrap {
+      .panel-body {
+        padding: 15px !important;
+        .employeeWrap {
+          max-height: 262px !important;
+          .sinEmployee {
+            height: 60px;
+            margin-bottom: 10px;
+            .empImg {
+              height: 50px;
+              margin-right: 10px;
+              width: 50px;
+              img {
+                height: 50px;
+                width: 50px;
+              }
+            }
+            .empDetails {
+              font-size: 11px;
+              margin: 0;
+              width: calc(100% - 65px);
+              .eTitle {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .contentWrapper {
+    .eMonthWrap {
+      margin: 10px 0 0;
+      .sinChunksWrap {
+        margin-bottom: 10px !important;
+        .sinChunks {
+          .eDetail-header {
+            width: 100% !important;
+            .chumksCount {
+              font-size: 22px !important;
+            }
+          }
+          .carousel-inner {
+            top: 0 !important;
+            .eImg {
+              height: 55px !important;
+              margin: 0 10px 0 0 !important;
+              width: 55px !important;
+              img {
+                height: 55px !important;
+                width: 55px !important;
+              }
+            }
+            .eDetail {
+              bottom: auto !important;
+              margin: 0 !important;
+              width: calc(100% - 65px) !important;
+              .employeeTitle {
+                font-size: 14px !important;
+              }
+              .employeeDesignation {
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1255px) {
+  .widgetWrapLs {
+    .widgetContent {
+      .widgetContentHead {
+        width: 110px !important;
+        .widImgWrap {
+          .widImg {
+            height: 80px !important;
+            width: 80px !important;
+          }
+        }
+      }
+      .widgetExtraDetail {
+        width: calc(100% - 110px) !important;
+      }
+    }
+  }
+}

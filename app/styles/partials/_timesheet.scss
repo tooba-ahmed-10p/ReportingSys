@@ -1,0 +1,339 @@
+.btn-link-o-inside{
+  color: currentColor !important;
+  &.disabled {
+    color: currentColor;
+    opacity: 0.9;
+    &:hover, &:focus, &:active, &.active {
+      color: currentColor;
+    }
+  }
+  &[disabled] {
+    color: currentColor;
+    opacity: 0.7;
+    &:hover, &:focus, &:active {
+      color: currentColor;
+    }
+  }
+  &.active[disabled] {
+    color: currentColor;
+    opacity: 0.9;
+  }
+}
+
+
+.legend {
+  margin: 0 15px 0 0;
+  display: inline-block;
+  span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+  }
+  .late-color {
+     background-color: $color-late;
+  }
+  .half-day-color {
+    background-color: $color-halfDay;
+  }
+  .leave-color {
+    background-color: $color-leave;
+  }
+  .holiday-color {
+    background-color: $color-holiday;
+  }
+  .check-missing-color {
+    background-color: $color-checkMissing;
+  }
+  .global-late-color {
+    background-color: $color-globalLate;
+  }
+  .absent-color {
+    background-color: $color-absent;
+  }
+  .attach-holiday-color {
+    background-color: #9694bd;
+  }
+}
+
+.late-color {
+  color: $color-lateTxt;
+  font-weight: 600;
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+    font-weight: 700;
+  }
+  td{
+    &:first-child{
+      background-color: $color-late;
+    }
+  }
+}
+
+.half-day-color {
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: $color-halfDay;
+    }
+  }
+}
+
+.leave-color {
+//  background-color: #a4eed2;
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: $color-leave;
+    }
+  }
+}
+
+.holiday-color {
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: $color-holiday;
+    }
+  }
+}
+
+.check-missing-color {
+//  background-color: #B0C4DE;
+  color: #585858;
+  font-weight: normal;
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: $color-checkMissing;
+    }
+  }
+}
+
+.global-late-color {
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: $color-globalLate;
+    }
+  }
+}
+
+.absent-color {
+//  background-color: #BBA2DE;
+    color: $color-absent;
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: $color-absent;
+    }
+  }
+}
+
+.attach-holiday-color {
+  .btn-link-o{
+    @extend .btn-link-o-inside;
+  }
+  td{
+    &:first-child{
+      background-color: #9694bd;
+    }
+  }
+}
+
+.pm-color {
+  background-color: lightgreen;
+}
+
+.hr-color {
+  background-color: lightblue;
+}
+
+.time-sheet {
+  //font-size: 11px;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  overflow-x: auto;
+  textarea {
+    height: 25px;
+  }
+  select {
+    font-size: 11px;
+    width: 100px;
+    height: 25px;
+  }
+  input[type="text"] {
+    width: 70px;
+    height: 30px;
+  }
+  tbody {
+    td {
+      text-align: center;
+      vertical-align: middle !important;
+      padding: 4px !important;
+    }
+  }
+}
+
+
+.user-att-details {
+  margin-top: 20px;
+}
+
+.month-nav-bar {
+  text-align: center;
+  background-color: #1E222E;
+  padding-right: 15px;
+  .tab-pane {
+    display: none !important;
+  }
+  .tabset {
+    display: inline-block;
+    height: 35px;
+  }
+  select {
+    float: right;
+    height: 26px;
+    margin-top: 7px;
+  }
+  ul li a {
+    padding: 10px 15px;
+  }
+}
+
+
+.dirty-input {
+  background-color: #EFE;
+  border-color: #6A6;
+}
+
+.error-input {
+  outline: none !important;
+  border: 1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.table-header-style {
+  vertical-align: middle
+}
+
+
+/*
+Disabled Row
+*/
+
+.deductionHistroy .disabledRow{
+  td {
+    background: $color-dddddd;
+    &:last-of-type{
+      background: $color-white;
+    }
+  }
+  .btn{
+    color: #808080;
+    &:hover,&:focus,&:active{
+      color: $color-white !important;
+    }
+  }
+
+}
+
+
+/*
+Table TimeSheet
+*/
+.user-timesheet{
+  .timesheet-indent {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 34px;
+    textarea,input[type="text"],select {
+      color: #585858;
+      height: 25px;
+      width: 100%;
+      line-height: normal;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 11px;
+    }
+    textarea{
+      padding-top: 4px;
+    }
+  }
+  .tbl-timesheet {
+    font-size: 11px;
+    vertical-align: middle;
+    thead{
+      border-bottom: 3px solid #A8A7A7;
+      border-top: 1px solid #A8A7A7;
+      > tr{
+        th{
+          font-size: 11px;
+          font-weight: 600 !important;
+          color: #333 !important;
+          background: #FFFFFF !important;
+          border: 1px solid #A8A7A7;
+          text-transform: uppercase;
+        }
+      }
+    }
+    & > tbody > tr > th,
+    & > tfoot > tr > th,
+    & > thead > tr > td,
+    & > thead > tr > th,
+    & > tbody > tr > td,
+    & > tfoot > tr > td{
+      padding: 4px;
+
+    }
+    tbody{
+      tr{
+        td{
+          &:first-child{
+            border-left: 1px solid #A8A7A7;
+          }
+          &:last-child{
+            border-right: 1px solid #A8A7A7;
+          }
+        }
+        &:last-child{
+          td{
+            border-bottom: 1px solid #A8A7A7;
+          }
+        }
+      }
+    }
+    .overlay-holiday {
+      width: calc(100% - 67px);
+      right: 0;
+      left: 32px;
+      height: 46px;
+      span {
+        line-height: 4;
+      }
+    }
+  }
+
+}
+
+.timesheet-progress{
+  top: 108px;
+}
+
+.input-padding{
+  padding: 4px
+}

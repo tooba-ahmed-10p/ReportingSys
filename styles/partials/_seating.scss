@@ -1,0 +1,69 @@
+/*
+=======
+Seating
+=======
+*/
+.seating-wrapper{
+  padding-bottom: 25px !important;
+  .buttons-grp{
+    text-align: right;
+  }
+  .seating-halls{
+    width: 100%;
+    //display: inline-block;
+    overflow: auto;
+    .collapse.in {
+      min-width: 1024px;
+      margin-top: 10px;
+    }
+    #hallB{
+      width: 1800px;
+    }
+    .six-seats{
+      margin-right: 130px;
+    }
+    .well {
+      margin-bottom: 0;
+      h2.hall-heading {
+        margin-top: 0;
+      }
+    }
+  }
+  .temp-table{
+    width: 100%;
+  }
+  .hall-buttons{
+    margin-bottom: 14px;
+    margin-top: 14px;
+
+    .btn-group .btn {
+      margin-right: 2px;
+    }
+
+  }
+}
+
+.seating-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  display: block;
+}
+
+#tempSticky.stick {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  min-width: calc(100% - 240px);
+  right: 0;
+  left: 240px;
+  background: #E2E2E2;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title ng-bind="pageTitle"></title>
+  <!-- build:css styles/main.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.css" />
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" href="styles/css/main.css"/>
+  <!-- endbuild -->
+</head>
+
+<body>
+<div class="wrapper">
+  <ui-view></ui-view>
+</div>
+</body>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+<script src="bower_components/restangular/dist/restangular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/metisMenu/dist/metisMenu.js"></script>
+<script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular-ui-select/dist/select.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/highChart.js -->
+<!--highChart-->
+<script src="src/common/vendors/highchart/highcharts.min.js"></script>
+<script src="src/common/vendors/highchart/exporting.min.js"></script>
+<script src="src/common/vendors/highchart/drilldown.min.js"></script>
+<!--highChart-->
+<!-- endbuild -->
+
+<!-- build:js scripts/theme.js -->
+<!--Theme related files-->
+<script src="src/common/vendors/jquery.metisMenu.js"></script>
+<script src="src/common/vendors/inspinia.js"></script>
+<!--Theme related files-->
+<!-- endbuild -->
+
+<!-- build:js scripts/app.js -->
+<!--App Module-->
+<script src="src/app.module.js"></script>
+<!--App Module-->
+<script src="src/core/core.module.js"></script>
+<script src="src/common/common.module.js"></script>
+<script src="src/core/restangular.config.js"></script>
+<script src="src/core/router.config.js"></script>
+<script src="src/core/httpStatus.constant.js"></script>
+<script src="src/common/ngMetis.directive.js"></script>
+<script src="src/common/storage.factory.js"></script>
+<!--Dashboard-->
+<script src="src/dashboard/dashboard.module.js"></script>
+<script src="src/dashboard/dashboard.controller.js"></script>
+<!--Dashboard-->
+
+<!--Shell-->
+<script src="src/shell/shell.module.js"></script>
+<script src="src/shell/header.controller.js"></script>
+<script src="src/shell/mainMenu.constant.js"></script>
+<!--Shell-->
+
+<!--AppMetrics-->
+<script src="src/appMetrics/appMetrics.module.js"></script>
+<script src="src/appMetrics/activeUsers.controller.js"></script>
+<script src="src/appMetrics/session.controller.js"></script>
+<!--AppMetrics-->
+
+<!--EventMetrics-->
+<script src="src/eventMetrics/eventMetrics.module.js"></script>
+<script src="src/eventMetrics/eventSummary.controller.js"></script>
+<!--EventMetrics-->
+
+<!--AppInfo-->
+<script src="src/appInfo/appInfo.module.js"></script>
+<script src="src/appInfo/appInfo.controller.js"></script>
+<!--AppInfo-->
+
+<script src="src/common/service.factory.js"></script>
+<!-- endbuild -->
+</html>

@@ -1,0 +1,69 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav" id="side-menu" ng-metis>
+      <li class="nav-header">
+        <div class="dropdown profile-element">
+          <span>
+            <a><img alt="Logo" class="" src="../../images/10pears_logo-old.png"/></a>
+          </span>
+        </div>
+        <div class="logo-element">
+          <a><img src="../../images/10pearls_element.png" alt="Logo"></a>
+        </div>
+      </li>
+      <!--Dynamic Navigation Menu-->
+      <li ng-repeat="menu in vm.menu">
+        <a id="{{menu.id}}" ui-sref="{{menu.link}}"><i class="{{menu.icon}}"></i><span class="nav-label">{{menu.name}}</span>
+          <span ng-if="menu.subMenu" class="fa arrow"></span>
+        </a>
+        <ul class="nav nav-second-level" ng-if="menu.subMenu">
+          <li ng-repeat="subItem in menu.subMenu"><a id="{{subItem.id}}" ui-sref="{{subItem.link}}">{{subItem.name}}</a></li>
+        </ul>
+      </li>
+      <!--Dynamic Navigation Menu-->
+    </ul>
+
+  </div>
+</nav>
+<div id="page-wrapper" class="gray-bg dashbard-1">
+  <div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " id="something"><i class="fa fa-bars"></i> </a>
+      </div>
+      <ul class="nav navbar-top-links navbar-right">
+        <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+            <div class="header-usrDetail">
+              <div class="empTitle">
+                Tooba Ahmed <b class="caret"></b>
+              </div>
+            </div>
+          </a>
+          <ul class="dropdown-menu animated fadeInRight m-t-xs">
+            <li><a target="_blank">Home</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="row white-bg dashboard-header">
+    <div class="col-lg-12">
+      <div class="form-group ">
+        <label class="col-sm-12 ">Select App:</label>
+        <div class="col-sm-7 dark-tags rmv-paddLeft">
+          <ui-select multiple ng-model="vm.selectedApps" ng-disabled="true">
+            <ui-select-match placeholder="Select App..">
+              {{ $item.name }}
+            </ui-select-match>
+            <ui-select-choices repeat="option in vm.applications | filter:$select.search">
+              <span ng-bind-template="{{ option.name }}"></span>
+            </ui-select-choices>
+          </ui-select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ui-view></ui-view>
+</div>

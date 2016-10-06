@@ -1,0 +1,55 @@
+.overtimeReport {
+  .top-area{
+    margin: 20px 0;
+    display: inline-block;
+    width: 100%;
+    h2{
+      margin: 0;
+    }
+  }
+  .report-boxes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ibox {
+    border: 1px solid #e7eaec;
+    .total-hour-diff {
+      background-color: #6C6368;
+      border: 1px solid #6C6368;
+    }
+    .overtime-weekend{
+      background-color: #6C6368;
+      border: 1px solid #6C6368;
+      background-image: url($icon-overtimeWeekend);
+    }
+    .overtime-home{
+      background-color: #89B399;
+      border: 1px solid #89B399;
+      background-image: url($icon-totalHourDiff);
+    }
+  }
+}
+
+.reports-links{
+  h2{
+    border-bottom: 3px solid $color-primary;
+    background: #2B3245;
+    color: $color-white;
+    font-size: 20px;
+    padding: 8px;
+  }
+  ul{
+    font-size: 14px;
+    li{
+      border-bottom: 1px solid $color-ccc;
+      padding: 6px 0px;
+      i{
+        margin-right: 8px;
+        color: #2B3245;
+      }
+      a{
+        color: #428bca;
+      }
+    }
+  }
+}
