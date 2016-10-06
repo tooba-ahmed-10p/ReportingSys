@@ -33,7 +33,7 @@
         templateUrl: 'src/appMetrics/session.html',
         controller: 'Session as vm',
         authenticate: true
-      })
+      });
   }
 
 }());

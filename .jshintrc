@@ -5,7 +5,7 @@
   "curly": true,
   "eqeqeq": true,
   "freeze": true,
-  "maxparams": 5,
+  "maxparams": 25,
   "immed": true,
   "indent": 2,
   "newcap": true,
@@ -18,9 +18,21 @@
   "trailing": true,
   "smarttabs": true,
   "white": true,
-  "predef": ["angular"],
+  "predef": [
+    "angular"
+  ],
   "jasmine": true,
   "globals": {
-    "$" : true
-  }
+    "$": true,
+    "_": true,
+    "document": true,
+    "moment": true,
+    "console": true,
+    "Promise": true,
+    "Highcharts": true,
+    "alert": true,
+    "saveAs": true,
+    "File": true
+  },
+  "browser": true
 }

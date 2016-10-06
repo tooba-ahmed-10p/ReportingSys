@@ -13,7 +13,7 @@
 		.controller('EventSummary', EventSummary);
 
   /* @ngInject */
-	function EventSummary(storage,service,$q){
+	function EventSummary(storage,service,$q,_){
 		var vm = this;
     var pageUrls = [];
     vm.eventSummary = [];

@@ -5,7 +5,8 @@ module.exports = {
   },
   app:{
     src: [
-      'app/src/**/*.js'
+      'app/src/**/*.js',
+      '!app/src/common/vendors/**'
     ]
   },
   test: {

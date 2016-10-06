@@ -29,7 +29,6 @@
      * My Description rules
      */
     function testFunction(num){
-			console.info('This is a test function');
 		}
 	}
 

@@ -13,7 +13,7 @@
     .controller('ActiveUsers', ActiveUsers);
 
   /* @ngInject */
-  function ActiveUsers(service, storage, $q) {
+  function ActiveUsers(service, storage, $q,_) {
     var vm = this;
     var pageUrls = [];
     vm.reportData = [];

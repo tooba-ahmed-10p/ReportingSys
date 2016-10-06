@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://E:/Project-10pearlsProtal/10PPortal-Angular/tasks/connect.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/bower_components/angular-ui-router/release/angular-ui-router.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/app.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/appInfo/appInfo.controller.js" charset="UTF-8" />
@@ -21,13 +22,10 @@
     <file url="file://$PROJECT_DIR$/app/src/eventMetrics/eventSummary.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/eventMetrics/eventSummary.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/shell/header.controller.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/shell/header.controller.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/shell/header.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/shell/header.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/shell/mainMenu.constant.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/shell/shell.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/css/main.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/partials/_portal_custom.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/partials/_style.scss" charset="UTF-8" />

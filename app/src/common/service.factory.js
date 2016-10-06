@@ -13,7 +13,7 @@
     .factory('service', service);
 
   /* @ngInject */
-  function service(storage, $http, $q) {
+  function service(storage, $http, $q, $timeout) {
     return {
       ActiveUsers: {
         daily: function (params) {
@@ -46,7 +46,7 @@
 
     function asyncCall(url, index) {
       var deferred = $q.defer();
-      setTimeout(function () {
+      $timeout(function () {
         httpCall(url).success(function (response) {
           deferred.resolve(response);
         }).error(function (response) {
