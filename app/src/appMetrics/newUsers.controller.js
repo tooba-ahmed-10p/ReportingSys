@@ -50,7 +50,6 @@
           });
         }));
         vm.usersByApplication = _.groupBy(vm.usersSummary, 'application');
-        //console.log(JSON.stringify(_getCategories(vm.usersByApplication)));
         initializeChart();
       });
     }
@@ -66,7 +65,7 @@
           text: 'New Users Per Country'
         },
         xAxis: {
-          type:'category'
+          categories: _.sortBy(_.pluck(storage.countries,'name').concat('Unknown'),function(country){return country;})
          },
         yAxis: {
           min: 0,
@@ -122,19 +121,15 @@
     function _filterData(finalData){
       var countries =_.pluck(storage.countries,'name').concat('Unknown');
       return _.map(finalData,function(app){
-      /*  _.each(countries,function(country){
-          app.data=  console.log(_.filter(app.data,function(a){
-            if(a.name == country) {
+        _.map(countries,function(country){
+          app.data= _.sortBy(_.filter(app.data,function(a){
+            if(a.name === country) {
               return a;
             }
            else{
-              return {name:country,y:0}
+              return {name:country,y:0};
             }
-            }))
-        });*/
-        _.each(countries,function(country){
-        //var data = _.findWhere(app.data, {name: country});
-         //console.log(data);
+            }),function(country){ return  country.name;});
         });
         return app;
       });
