@@ -25,11 +25,6 @@
         },
         {
           id:2,
-          name: '3D Motorcycle Racing - Amazon',
-          apiKey: 'WGGMSHXWJZQ7MX9F9CY6'
-        },
-        {
-          id:3,
           name: '3D Motorcycle Racing Challenge - Android',
           apiKey: 'TKGJN7339NTTRZ92RB4T'
         },
@@ -41,11 +36,47 @@
       ]
     };
 
+    var countries =[
+      {
+        name:'United States',
+        code:'US'
+      },
+      {
+        name:'Australia',
+        code:'AU'
+      },
+      {
+        name:'Canada',
+        code:'CA'
+      },
+      {
+        name:'China',
+        code:'CN'
+      },
+      {
+        name:'India',
+        code:'IN'
+      },
+      {
+        name: 'Malaysia',
+        code: 'MY'
+      },
+      {
+        name: 'Pakistan',
+        code: 'PK'
+      },
+      {
+        name: 'United Kingdom',
+        code: 'GB'
+      }
+    ];
+
     /*var cookieExpiry= moment().add(1, 'days').toDate();
      $cookies.put(appConstants.apiAccessCode, 'RVG8N9RSQ2WWBF7X8XTK', cookieExpiry);*/
 
     return {
-      appConstants: appConstants
+      appConstants: appConstants,
+      countries:countries
     };
 
     ////////////////////

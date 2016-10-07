@@ -33,6 +33,12 @@
         templateUrl: 'src/appMetrics/session.html',
         controller: 'Session as vm',
         authenticate: true
+      })
+      .state('Header.AppMetrics.NewUsers', {
+        url: '/newUsers',
+        templateUrl: 'src/appMetrics/newUsers.html',
+        controller: 'NewUsers as vm',
+        authenticate: true
       });
   }
 

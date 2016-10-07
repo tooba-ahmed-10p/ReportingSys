@@ -23,6 +23,12 @@
           'link': 'Header.AppMetrics.ActiveUsers',
           'rights': 'public'
         },
+       /* {
+          'id': 'newUsers',
+          'name': 'New Users',
+          'link': 'Header.AppMetrics.NewUsers',
+          'rights': 'public'
+        },*/
         {
           'id': 'session',
           'name': 'Session',

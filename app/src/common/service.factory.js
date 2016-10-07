@@ -26,6 +26,16 @@
           return storage.appConstants.baseUrl + '/appMetrics/ActiveUsersByMonth?apiAccessCode=' + storage.appConstants.apiAccessCode + '&apiKey=' + params.apiKey + '&startDate=' + params.startDate + '&endDate=' + params.endDate;
         }
       },
+      NewUsers:{
+        getAllUsers: function (params){
+          return storage.appConstants.baseUrl + '/appMetrics/NewUsers?apiAccessCode=' + storage.appConstants.apiAccessCode + '&apiKey=' + params.apiKey + '&startDate=' + params.startDate + '&endDate=' + params.endDate + '&country=ALL';
+        }
+      },
+      Session:{
+        sessionLength:function(apiKey,startDate,endDate){
+          return storage.appConstants.baseUrl + '/appMetrics/AvgSessionLength?apiAccessCode=' + storage.appConstants.apiAccessCode + '&apiKey=' + apiKey + '&startDate=' + startDate + '&endDate=' + endDate;
+        }
+      },
       EventMetrics: {
         summary: function (params) {
           return storage.appConstants.baseUrl + '/eventMetrics/Summary?apiAccessCode=' + storage.appConstants.apiAccessCode + '&apiKey=' + params.apiKey + '&startDate=' + params.startDate + '&endDate=' + params.endDate;
